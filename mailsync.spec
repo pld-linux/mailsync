@@ -1,12 +1,12 @@
 Summary:	MailSync - synchronizing a collection of mailboxes
 Summary(pl):	MailSync - synchronizacja zbioru skrzynek pocztowych
 Name:		mailsync
-Version:	5.1.0
+Version:	5.1.1
 Release:	1
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
-# Source0-md5:	11c099a94143b11b35ed3a0a9593e33a
+# Source0-md5:	aa7f3983e38d66e00ab9231760751c75
 Patch0:		%{name}-assert.patch
 URL:		http://mailsync.sourceforge.net/
 BuildRequires:	imap-devel
