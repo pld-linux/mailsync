@@ -40,7 +40,7 @@ skrzynkami. Dzia³a to na tej samej zasadzie co CVS, z wyj±tkiem tego,
 %patch1 -p1
 
 %build
-%{__autoconf}
+./autogen.sh
 %configure \
 	--with-openssl
 
