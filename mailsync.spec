@@ -2,18 +2,20 @@ Summary:	MailSync - synchronizing a collection of mailboxes
 Summary(pl):	MailSync - synchronizacja zbioru skrzynek pocztowych
 Name:		mailsync
 Version:	5.1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	aa7f3983e38d66e00ab9231760751c75
 Patch0:		%{name}-assert.patch
+Patch1:		%{name}-imap2004_fix.patch
 URL:		http://mailsync.sourceforge.net/
-BuildRequires:	imap-devel
+BuildRequires:	imap-devel >= 2004
 #BuildRequires:	krb5-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 #BuildRequires:	pam-devel
+Requires:	imap-lib >= 2004
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,6 +37,7 @@ skrzynkami. Dzia³a to na tej samej zasadzie co CVS, z wyj±tkiem tego,
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure \
