@@ -12,13 +12,13 @@ diff -ur mailsync-5.1.1/acinclude/ac_with_cclient.m4 mailsync-5.1.1-patched/acin
       CCLIENT_LIBS="$l"
 diff -ur mailsync-5.1.1/acinclude/ac_with_openssl.m4 mailsync-5.1.1-patched/acinclude/ac_with_openssl.m4
 --- mailsync-5.1.1/acinclude/ac_with_openssl.m4	2003-01-23 22:02:35.000000000 +0000
-+++ mailsync-5.1.1-patched/acinclude/ac_with_openssl.m4	2004-06-10 17:18:23.000000000 +0000
++++ mailsync-5.1.1-patched/acinclude/ac_with_openssl.m4	2004-06-10 17:47:24.000000000 +0000
 @@ -22,7 +22,7 @@
    ifelse([$2], , :, [$2])
   else
    AC_MSG_CHECKING([for libssl])
 -  for p in `eval "echo {${OPENSSLLOCATIONS}}{/lib,}"` ; do
-+  for p in `eval "echo {${OPENSSLLOCATIONS}}{/lib,lib64,}"` ; do
++  for p in `eval "echo {${OPENSSLLOCATIONS}}{/lib,/lib64,}"` ; do
     if test -r "${p}/libssl.a" -o -r "${p}/libssl.so" ; then
      OPENSSL_LDFLAGS="-L${p}"
      AC_MSG_RESULT([found in ${p}])
