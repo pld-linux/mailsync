@@ -1,0 +1,12 @@
+diff -ur mailsync-5.1.1/src/msgid.cc mailsync-5.1.1-patched/src/msgid.cc
+--- mailsync-5.1.1/src/msgid.cc	2003-04-03 08:37:39.000000000 +0000
++++ mailsync-5.1.1-patched/src/msgid.cc	2004-06-09 12:01:53.000000000 +0000
+@@ -80,7 +80,7 @@
+         char addr[4096];
+ 
+         if (envelope->date)
+-          str = string(envelope->date);
++          str = string((const char *)envelope->date);
+         if (envelope->subject)
+           str += string(envelope->subject);
+         if (envelope->message_id)
