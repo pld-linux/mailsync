@@ -12,7 +12,7 @@ URL:		http://mailsync.sourceforge.net/
 BuildRequires:	imap-devel
 #BuildRequires:	krb5-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	openssl-devel
+BuildRequires:	openssl-devel >= 0.9.7d
 #BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
