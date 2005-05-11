@@ -39,7 +39,7 @@ skrzynkami. Dzia³a to na tej samej zasadzie co CVS, z wyj±tkiem tego,
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%ifarch amd64
+%if "%{_lib}" == "lib64"
 %patch2 -p1
 %endif
 
