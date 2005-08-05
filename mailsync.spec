@@ -7,7 +7,6 @@ License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	67c9f68575756b76581cf9be74608aa5
-Patch2:		%{name}-amd64_fix.patch
 URL:		http://mailsync.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
