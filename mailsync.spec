@@ -2,11 +2,12 @@ Summary:	MailSync - synchronizing a collection of mailboxes
 Summary(pl):	MailSync - synchronizacja zbioru skrzynek pocztowych
 Name:		mailsync
 Version:	5.2.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	67c9f68575756b76581cf9be74608aa5
+Patch0:		%{name}-ksh.patch
 URL:		http://mailsync.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -36,6 +37,7 @@ skrzynkami. Dzia³a to na tej samej zasadzie co CVS, z wyj±tkiem tego,
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 ./autogen.sh
