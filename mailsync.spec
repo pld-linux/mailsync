@@ -1,5 +1,5 @@
 Summary:	MailSync - synchronizing a collection of mailboxes
-Summary(pl):	MailSync - synchronizacja zbioru skrzynek pocztowych
+Summary(pl.UTF-8):   MailSync - synchronizacja zbioru skrzynek pocztowych
 Name:		mailsync
 Version:	5.2.1
 Release:	5
@@ -27,13 +27,13 @@ and message deletions are propagated between the two mailboxes. If
 you're familiar with CVS, it's the same principle, except there's no
 opportunity for conflicts.
 
-%description -l pl
-Mailsync to sposób synchronizacji zbioru skrzynek pocztowych. Algorytm
-to trójstronny diff. Dwie skrzynki s± jednocze¶nie porównywane z
-rekordem stanu dwóch skrzynek po ostatniej synchronizacji. Nowe
-wiadomo¶ci i usuniêcia wiadomo¶ci s± propagowane miêdzy dwiema
-skrzynkami. Dzia³a to na tej samej zasadzie co CVS, z wyj±tkiem tego,
-¿e nie wystêpuj± konflikty.
+%description -l pl.UTF-8
+Mailsync to sposÃ³b synchronizacji zbioru skrzynek pocztowych. Algorytm
+to trÃ³jstronny diff. Dwie skrzynki sÄ… jednoczeÅ›nie porÃ³wnywane z
+rekordem stanu dwÃ³ch skrzynek po ostatniej synchronizacji. Nowe
+wiadomoÅ›ci i usuniÄ™cia wiadomoÅ›ci sÄ… propagowane miÄ™dzy dwiema
+skrzynkami. DziaÅ‚a to na tej samej zasadzie co CVS, z wyjÄ…tkiem tego,
+Å¼e nie wystÄ™pujÄ… konflikty.
 
 %prep
 %setup -q
