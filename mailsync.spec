@@ -1,5 +1,5 @@
 Summary:	MailSync - synchronizing a collection of mailboxes
-Summary(pl.UTF-8):   MailSync - synchronizacja zbioru skrzynek pocztowych
+Summary(pl.UTF-8):	MailSync - synchronizacja zbioru skrzynek pocztowych
 Name:		mailsync
 Version:	5.2.1
 Release:	5
