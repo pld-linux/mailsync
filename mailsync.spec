@@ -2,7 +2,7 @@ Summary:	MailSync - synchronizing a collection of mailboxes
 Summary(pl.UTF-8):	MailSync - synchronizacja zbioru skrzynek pocztowych
 Name:		mailsync
 Version:	5.2.1
-Release:	7
+Release:	8
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
