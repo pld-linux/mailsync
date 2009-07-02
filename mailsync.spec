@@ -12,7 +12,7 @@ URL:		http://mailsync.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	imap-devel >= 2004
-#BuildRequires:	krb5-devel
+#BuildRequires:	heimdal-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 #BuildRequires:	pam-devel
