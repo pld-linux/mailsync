@@ -1,0 +1,33 @@
+--- mailsync-5.2.1/acinclude/ac_with_cclient.m4~	2026-05-08 11:29:50.000000000 +0200
++++ mailsync-5.2.1/acinclude/ac_with_cclient.m4	2026-05-08 11:33:02.530014979 +0200
+@@ -49,7 +49,7 @@
+    dnl Looking for c-client libraries
+    dnl
+    AC_MSG_CHECKING([for c-client library])
+-   for l in `eval "echo {${CCLIENTLOCATIONS}}{,/c-client,/lib/c-client,/lib,/lib64}/{libc-client,libc-client4,c-client}{${SOP}}"` ; do
++   for l in `eval "echo {${CCLIENTLOCATIONS}}{,/c-client,/lib/c-client,/lib,/lib64,/libx32}/{libc-client,libc-client4,c-client}{${SOP}}"` ; do
+     if test -r "$l" ; then
+      AC_MSG_RESULT([found ${l}])
+      CCLIENT_LIBS="$l"
+--- mailsync-5.2.1/acinclude/ac_with_openssl.m4~	2026-05-08 11:34:30.000000000 +0200
++++ mailsync-5.2.1/acinclude/ac_with_openssl.m4	2026-05-08 11:36:53.546681713 +0200
+@@ -23,7 +23,7 @@
+   ifelse([$2], , :, [$2])
+  else
+   AC_MSG_CHECKING([for libssl])
+-  for p in `eval "echo {${OPENSSLLOCATIONS}}{/lib,/lib64}"` ; do
++  for p in `eval "echo {${OPENSSLLOCATIONS}}{/lib,/lib64,/libx32}"` ; do
+    if test -r "${p}/libssl.a" -o -r "${p}/libssl.so" ; then
+     OPENSSL_LDFLAGS="-L${p}"
+     AC_MSG_RESULT([found in ${p}])
+--- mailsync-5.2.1/acinclude/ac_with_pam.m4~	2026-05-08 11:34:30.000000000 +0200
++++ mailsync-5.2.1/acinclude/ac_with_pam.m4	2026-05-08 11:37:07.216681724 +0200
+@@ -22,7 +22,7 @@
+   ifelse([$2], , :, [$2])
+  else
+   AC_MSG_CHECKING([for pam library])
+-  for p in `eval "echo {${PAMLOCATIONS}}{/lib,/lib64}"` ; do
++  for p in `eval "echo {${PAMLOCATIONS}}{/lib,/lib64,/libx32}"` ; do
+    if test -r "${p}/libpam.a" -o -r "${p}/libpam.so" ; then
+     PAM_LDFLAGS="-L${p}"
+     AC_MSG_RESULT([found in ${p}])

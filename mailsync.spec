@@ -8,6 +8,7 @@ Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	67c9f68575756b76581cf9be74608aa5
 Patch0:		%{name}-ksh.patch
+Patch1:		x32.patch
 URL:		http://mailsync.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -38,6 +39,7 @@ skrzynkami. Działa to na tej samej zasadzie co CVS, z wyjątkiem tego,
 %prep
 %setup -q
 %patch -P0 -p0
+%patch -P1 -p1
 
 %build
 ./autogen.sh
